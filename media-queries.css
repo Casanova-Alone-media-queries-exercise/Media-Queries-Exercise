@@ -105,13 +105,22 @@
     }
 }
 @media screen and (min-width: 1000px) {
+    * {
+        box-sizing: border-box;
+        background: purple;
+    }
     body {
+        margin: 0;
+        background: lime;
         display: flex;
         flex-direction: column;
     }
     h1 {
         display: flex;
         justify-content: flex-start;
+        background: blue;
+        padding: 0;
+        margin: 0;
     }
 
     nav {
@@ -119,26 +128,41 @@
         justify-content: center;
         align-content: center;
         width: 100%;
+        background: red;
     }
     ul {
         list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background: lightpink;
     }
 
+    /*li {*/
+    /*    display: inline;*/
+    /*}*/
+
+    /*li a {*/
+    /*    display: block;*/
+    /*}*/
+
     .nav-links li {
-        display: flex;
-        flex-direction: column;
-        /*justify-content: flex-end;*/
-        justify-items: flex-end;
-        align-items: center;
-        margin-top: .4em;
-        margin-bottom: .4em;
-        width: 100%;
-        padding-bottom: 7px;
-        padding-top: 7px;
-        /*padding: 5px ;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*!*justify-content: flex-end;*!*/
+        /*justify-items: flex-end;*/
+        /*align-items: center;*/
+        /*!*margin-top: .4em;*!*/
+        /*!*margin-bottom: .4em;*!*/
+        /*width: 100%;*/
+        /*padding-bottom: 7px;*/
+        /*padding-top: 7px;*/
+        /*!*padding: 5px ;*!*/
+        /*background: yellow;*/
     }
     .sub-section {
         font-style: italic;
+        background: cadetblue;
     }
 
     footer {
@@ -146,16 +170,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background: brown;
     }
 
     .fa-brands {
-
         padding: .2em;
+        background: coral;
     }
 
     .social-footer-icons {
         display: flex;
         justify-content: center;
+        background: deeppink;
     }
 
 }
