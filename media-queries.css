@@ -133,8 +133,7 @@
     }
 
     li {
-        display: flex;
-        padding: 1em;
+
     }
 
     .header-img {
@@ -171,12 +170,12 @@
 
     .fa-brands {
         padding: .2em;
-        background: coral;
     }
 
     .social-footer-icons {
         display: flex;
         justify-content: center;
-        background: deeppink;
+        padding: 1em;
+        list-style: none;
     }
 }
