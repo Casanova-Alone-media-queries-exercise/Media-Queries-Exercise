@@ -8,7 +8,7 @@
     .alert-info {
         display: inline-flex;
         justify-content: center;
-        background-color: #a7f8f8;
+        background-color: #CBFFFE;
         border: 3px solid lightgrey;
         padding: 10px;
         text-decoration: none;
@@ -57,8 +57,8 @@
         margin-bottom: .4em;
         background-color: lightgrey;
         width: 100%;
-        padding-bottom: 7px;
-        padding-top: 7px;
+        padding-bottom: .7em;
+        padding-top: .7em;
         /*padding: 5px ;*/
     }
 
@@ -104,60 +104,32 @@
 
     }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
     body {
         background: purple;
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        margin: 0;*/
-/*        !*border: 20px crimson;*!*/
     }
 
-/*    .alert-info{*/
-/*        display: none;*/
-/*    }*/
-
-/*    h1 {*/
-/*        display: flex;*/
-/*        justify-content: flex-start;*/
-
-/*    }*/
-
-/*    .nav-links {*/
-/*        display: flex;*/
-/*        gap: 1rem;*/
-/*        justify-content: flex-end;*/
-/*        margin: 0;*/
-/*        padding: 0;*/
-/*        list-style: none;*/
-/*    }*/
-
-/*    .nav-links li {*/
-
-/*    }*/
-/*}*/
     .alert-info {
             display: none;
     }
 
     h1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
         background: blue;
-        padding: 0;
-        margin: 2px
+        text-align: center;
+        padding: .5em;
     }
 
-    ul {
+    .nav-links li{
+        display: inline;
         list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        /*align-content: center;*/
-        margin: 0;
-        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        padding: .5em;
         background: lightpink;
+
     }
 
     li {
@@ -170,15 +142,21 @@
         flex-direction: column;
     }
 
-    .main {
-        display: flex;
-        /*justify-content: space-evenly;*/
+    #main {
         background: yellow;
-
+        display: inline-block;
+        margin-top: .5em;
+        margin-right: 50%;
+        padding: 1em;
+        box-sizing: border-box;
+        border: 7px black solid;
     }
     .sub-section {
-        display: flex;
-        flex-direction: row;
+        display: inline-block;
+        margin-left: 50%;
+        padding: 1em;
+        box-sizing: border-box;
+        border: 7px black solid;
         font-style: italic;
         background: cadetblue;
     }
